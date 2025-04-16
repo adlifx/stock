@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#add-product">Add Product</a></li>
+            <li><a href="#inventory">View Inventory</a></li>
+            <li><a href="#deliver-product">Deliver Product</a></li>
+            <li><a href="#returns">Return Product</a></li>
+        </ul>
+    </nav>
+
+    <div id="add-product">
+        <h2>Add Product</h2>
+        <form id="add-product-form">
+            <input type="text" id="product-name" placeholder="Product Name" required />
+            <input type="text" id="serial-range" placeholder="Serial Number Range" required />
+            <button type="submit">Add Product</button>
+        </form>
+    </div>
+
+    <div id="inventory">
+        <h2>Inventory</h2>
+        <table id="inventory-table"></table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
